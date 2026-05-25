@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saranraj S — Software Engineer</title>
+  <base href="/saranraj/" />
+  <meta name="description"
+    content="MERN Stack Software Engineer specialising in Fintech, Microservices & Cloud Infrastructure" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ── CURSOR ─────────────────────────────────────────────────────────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ── NAVBAR ─────────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="navbar">
+    <div class="nav__logo">
+      <span class="nav__logo-bracket">&lt;</span>SR<span class="nav__logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+    </ul>
+    <a href="/api/resume" class="btn btn--outline btn--sm" download>Resume ↓</a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <canvas id="gridCanvas"></canvas>
+    </div>
+    <div class="container hero__container">
+      <div class="hero__content">
+        <div class="hero__badge reveal">
+          <span class="dot dot--green"></span> Available for opportunities
+        </div>
+        <h1 class="hero__name reveal reveal--delay1">
+          Saranraj S<br />
+        </h1>
+        <p class="hero__role reveal reveal--delay2">
+          <span class="typewriter" id="typewriter"></span>
+        </p>
+        <p class="hero__tagline reveal reveal--delay3">
+          3+ years building production-grade <strong>digital lending platforms</strong> for India's NBFC ecosystem — Jio
+          Financial, IDBI Bank, and beyond.
+        </p>
+        <div class="hero__cta reveal reveal--delay4">
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Let's Talk →</a>
+        </div>
+
+        <div class="hero__stats reveal reveal--delay4">
+          <div class="stat">
+            <span class="stat__num" data-count="3">0</span><span class="stat__unit">+</span>
+            <span class="stat__label">Years Exp.</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-count="10">0</span><span class="stat__unit">+</span>
+            <span class="stat__label">NBFC Clients</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-count="5">0</span><span class="stat__unit">+</span>
+            <span class="stat__label">Microservices</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <span class="stat__num" data-count="40">0</span><span class="stat__unit">%</span>
+            <span class="stat__label">Throughput ↑</span>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="hero__image reveal reveal--right">
+        <div class="hero__image-wrapper">
+          <img src="/assets/profile_pic.png" alt="Saranraj Profile Picture" />
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__label reveal">// about me</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="section__title">Crafting reliable<br /><em>fintech infrastructure</em></h2>
+          <p>
+            I'm a MERN Stack engineer based in <strong>Bangalore</strong>, specialising in
+            high-throughput backend systems for the digital lending space. My day-to-day
+            involves architecting Node.js microservices, wrangling MongoDB aggregations,
+            and making sure millions of rupees flow reliably through payment and KYC pipelines.
+          </p>
+          <p>
+            Outside production systems, I'm deeply invested in cloud infrastructure —
+            designing secure Azure environments with VNets, NAT Gateways, and Key Vault
+            so fintech workloads stay isolated and audit-ready.
+          </p>
+          <p>
+            I led our VAPT security certification drive — the first in the company — and
+            came out the other side with payload encryption, JWT rotation, and rate-limiting
+            baked into every service.
+          </p>
+          <div class="about__contacts">
+            <a href="mailto:saranraji.dev@gmail.com" class="contact-chip">saranraji.dev@gmail.com</a>
+            <a href="https://linkedin.com/in/saranraj-s-065376180" target="_blank" class="contact-chip">LinkedIn</a>
+            <!-- <a href="https://github.com/saranraj" target="_blank" class="contact-chip">GitHub</a> -->
+            <span class="contact-chip">Bangalore, India</span>
+          </div>
+        </div>
+        <div class="about__card reveal reveal--right">
+          <div class="about__terminal">
+            <div class="terminal__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="terminal__title">saranraj@ezee-ai:~</span>
+            </div>
+            <div class="terminal__body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">saranraj — associate software engineer</p>
+              <p><span class="t-prompt">$</span> cat stack.txt</p>
+              <p class="t-out">Node.js · Express · MongoDB</p>
+              <p class="t-out">React · Redis · RabbitMQ</p>
+              <p class="t-out">Azure · Docker · Nginx</p>
+              <p><span class="t-prompt">$</span> cat current_focus.txt</p>
+              <p class="t-out">✦ Kubernetes &amp; container orchestration</p>
+              <p class="t-out">✦ System design at scale</p>
+              <p class="t-out">✦ Azure AZ-104 certification</p>
+              <p><span class="t-prompt">$</span> <span class="t-cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ─────────────────────────────────────────────────────────── -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__label reveal">// work history</div>
+      <h2 class="section__title reveal">Where I've <em>worked</em></h2>
+      <div class="timeline">
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Associate Software Engineer</h3>
+                <p class="timeline__company">Ezee-ai &nbsp;·&nbsp; Bangalore</p>
+              </div>
+              <span class="timeline__period">Jan 2024 – Present</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Architected <strong>5+ production microservices</strong> using Node.js, Express &amp; MongoDB serving
+                10+ NBFC partners including Jio Financial Services and IDBI Bank.</li>
+              <li>Built event-driven pipelines with <strong>RabbitMQ</strong> for real-time financial data processing —
+                achieved <strong>40% throughput increase</strong>.</li>
+              <li>Led <strong>VAPT security certification</strong> initiative: JWT rotation, payload encryption,
+                rate-limiting &amp; IP whitelisting across all services.</li>
+              <li>Designed secure <strong>Azure cloud environments</strong> using VNets, Subnets, Peering, NAT Gateway
+                &amp; Key Vault.</li>
+              <li>Integrated <strong>Prometheus &amp; Grafana</strong> for real-time observability across the
+                microservices mesh.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Node.js</span><span class="tag">RabbitMQ</span><span class="tag">MongoDB</span>
+              <span class="tag">Azure</span><span class="tag">Docker</span><span class="tag">VAPT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <div class="timeline__header">
+              <div>
+                <h3 class="timeline__role">Software Engineer Intern</h3>
+                <p class="timeline__company">Ezee-ai &nbsp;·&nbsp; Bangalore &nbsp;·&nbsp; Collections &amp; Lending
+                  Platform</p>
+              </div>
+              <span class="timeline__period">Nov 2022 – Dec 2023</span>
+            </div>
+            <ul class="timeline__bullets">
+              <li>Integrated <strong>CIBIL credit bureau API</strong>, e-KYC, and bureau data enrichment to automate
+                loan eligibility assessment.</li>
+              <li>Built secure <strong>payment gateway integrations</strong> enabling 100% reliable EMI collections
+                &amp; disbursements.</li>
+              <li>Developed <strong>backend modules</strong> for collections tracking, overdue management, and automated
+                reminders.</li>
+              <li>Contributed <strong>React.js + Redux</strong> frontend screens for loan officer dashboards and
+                applicant pipeline views.</li>
+            </ul>
+            <div class="timeline__tags">
+              <span class="tag">Node.js</span><span class="tag">React.js</span><span class="tag">CIBIL</span>
+              <span class="tag">Payment Gateway</span><span class="tag">Redux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────────────────────────────────────── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__label reveal">// tech stack</div>
+      <h2 class="section__title reveal">What I <em>build with</em></h2>
+      <div class="skills__grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">⚙️</div>
+          <h4>Backend</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">Node.js</span>
+            <span class="skill-pill skill-pill--primary">Express.js</span>
+            <span class="skill-pill">TypeScript</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">GraphQL</span>
+            <span class="skill-pill">Microservices</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">☁️</div>
+          <h4>Cloud &amp; DevOps</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">Microsoft Azure</span>
+            <span class="skill-pill skill-pill--primary">Docker</span>
+            <span class="skill-pill">Nginx</span>
+            <span class="skill-pill">CI/CD</span>
+            <span class="skill-pill">Prometheus</span>
+            <span class="skill-pill">Grafana</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🗄️</div>
+          <h4>Data &amp; Messaging</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">MongoDB</span>
+            <span class="skill-pill skill-pill--primary">RabbitMQ</span>
+            <span class="skill-pill">Redis</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Schema Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🖥️</div>
+          <h4>Frontend</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">React.js</span>
+            <span class="skill-pill">Redux</span>
+            <span class="skill-pill">Context API</span>
+            <span class="skill-pill">HTML5 / CSS3</span>
+            <span class="skill-pill">SCSS</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">🔒</div>
+          <h4>Security</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">VAPT Certified</span>
+            <span class="skill-pill">JWT Auth</span>
+            <span class="skill-pill">Payload Encryption</span>
+            <span class="skill-pill">Rate Limiting</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card__icon">💳</div>
+          <h4>Fintech Domain</h4>
+          <div class="skill-list">
+            <span class="skill-pill skill-pill--primary">Digital Lending</span>
+            <span class="skill-pill">KYC / AML</span>
+            <span class="skill-pill">CIBIL</span>
+            <span class="skill-pill">e-NACH</span>
+            <span class="skill-pill">NBFC Integration</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ────────────────────────────────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section__label reveal">// featured work</div>
+      <h2 class="section__title reveal">Things I've <em>shipped</em></h2>
+      <div class="projects__grid">
+
+        <div class="project-card project-card--featured reveal">
+          <div class="project-card__label">Featured Project</div>
+          <h3>Digital Lending Microservices Platform</h3>
+          <p>
+            End-to-end loan origination platform serving 10+ NBFCs. Modular microservices handle KYC verification,
+            CIBIL checks, e-NACH repayment setup, and collections workflows — all event-driven via RabbitMQ.
+            Onboarded clients including Jio Financial Services, IDBI Bank, Vistaar Finance, and Clix Capital.
+          </p>
+          <div class="project-card__metrics">
+            <div class="metric"><span>10+</span> NBFC Clients</div>
+            <div class="metric"><span>40%</span> Throughput Gain</div>
+            <div class="metric"><span>5+</span> Microservices</div>
+          </div>
+          <div class="project-card__stack">
+            <span>Node.js</span><span>React.js</span><span>RabbitMQ</span><span>MongoDB</span><span>Azure</span><span>Docker</span><span>Nginx</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__number">02</div>
+          <h3>VAPT Security Hardening</h3>
+          <p>
+            Led the company's first security audit preparation. Implemented payload encryption,
+            JWT token rotation, rate limiting, and IP whitelisting across 5+ production services.
+            Platform achieved VAPT certification post-audit.
+          </p>
+          <div class="project-card__stack">
+            <span>JWT</span><span>Encryption</span><span>Rate Limiting</span><span>IP Whitelist</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__number">03</div>
+          <h3>Azure Cloud Infrastructure</h3>
+          <p>
+            Designed multi-environment Azure setup with VNets, Subnets, Peering, NAT Gateways,
+            and Key Vault. Configured Nginx reverse proxies for SSL termination and load balancing
+            across the microservices mesh.
+          </p>
+          <div class="project-card__stack">
+            <span>Azure VNet</span><span>Key Vault</span><span>NAT Gateway</span><span>Nginx</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card__number">04</div>
+          <h3>Observability Stack</h3>
+          <p>
+            Integrated Prometheus metrics collection and Grafana dashboards for real-time service
+            health monitoring and alerting. Built custom dashboards tracking API latency, RabbitMQ
+            queue depths, and MongoDB query performance.
+          </p>
+          <div class="project-card__stack">
+            <span>Prometheus</span><span>Grafana</span><span>Node.js</span><span>Docker</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__label reveal">// get in touch</div>
+      <h2 class="section__title reveal">Let's <em>work together</em></h2>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__intro">
+            Open to full-time roles, contract work, and interesting fintech problems.
+            Drop me a message — I typically reply within 24 hours.
+          </p>
+          <div class="contact__links">
+            <a href="mailto:saranraji.dev@gmail.com" class="contact__link">
+              <span class="contact__link-icon">✉</span>
+              <span>saranraji.dev@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/saranraj-s-065376180" target="_blank" class="contact__link">
+              <span class="contact__link-icon">in</span>
+              <span>LinkedIn</span>
+            </a>
+            <!-- <a href="https://github.com/saranraj" target="_blank" class="contact__link">
+            <span class="contact__link-icon">&#9672;</span>
+            <span>github.com/saranraj</span>
+          </a> -->
+            <a href="tel:+916369290623" class="contact__link">
+              <span class="contact__link-icon">☎</span>
+              <span>+91 63692 90623</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrap reveal reveal--right">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Arjun Sharma" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="arjun@company.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project…"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn__text">Send Message</span>
+              <span class="btn__loader" hidden>Sending…</span>
+            </button>
+            <p class="form__status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="nav__logo-bracket">&lt;</span>SR<span class="nav__logo-bracket">/&gt;</span>
+          <p>Building fintech infrastructure that moves money reliably.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="api/resume" download>Resume</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Saranraj S · Built with Node.js &amp; Express · Designed &amp; developed from scratch</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
