@@ -60,7 +60,7 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="rounded-full">
-              <a href="/public/Saranraj Associate Software Engineer CV.pdf" download>
+              <a href="/Saranraj Associate Software Engineer CV.pdf" download>
                 <Download className="mr-2 w-4 h-4" /> Download Resume
               </a>
             </Button>

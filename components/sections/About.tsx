@@ -30,7 +30,7 @@ export function About() {
               I'm a Full-Stack Software Engineer based in <strong className="text-foreground">Bangalore</strong>, specialising in high-throughput backend systems, MERN stack development, and event-driven architectures.
             </p>
             <p>
-              At Epikindifi Software, I architect Node.js microservices and dynamic product configurations that process over 100K+ concurrent records for major clients like Reliance Jio AirFiber, IDBI Bank, and Clix Capital. 
+              At Epikindifi Software, I architect Node.js microservices and dynamic product configurations that process over 100K+ concurrent records for Reliance Jio AirFiber. 
             </p>
             <p>
               Beyond traditional REST APIs, I have hands-on experience building AI-powered retrieval-augmented generation (RAG) pipelines using Python, FastAPI, and LangChain to bring intelligent automation to enterprise data.

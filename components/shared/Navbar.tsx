@@ -54,7 +54,7 @@ export function Navbar() {
             ))}
           </ul>
           <a
-            href="/public/Saranraj Associate Software Engineer CV.pdf"
+            href="/Saranraj Associate Software Engineer CV.pdf"
             download
             className="text-sm font-medium border border-primary/50 text-primary px-4 py-2 rounded-md hover:bg-primary/10 transition-colors"
           >
@@ -88,7 +88,7 @@ export function Navbar() {
             ))}
           </ul>
           <a
-            href="/public/Saranraj Associate Software Engineer CV.pdf"
+            href="/Saranraj Associate Software Engineer CV.pdf"
             download
             className="text-center text-sm font-medium bg-primary text-primary-foreground px-4 py-3 rounded-md hover:bg-primary/90 transition-colors mt-2"
           >

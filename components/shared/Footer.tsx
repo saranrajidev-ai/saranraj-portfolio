@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, GitFork } from "lucide-react";
 
 export function Footer() {
   return (
@@ -47,15 +47,15 @@ export function Footer() {
               <circle cx="4" cy="4" r="2" />
             </svg>
           </a>
-          {/* <a
-            href="https://github.com/saranraj"
+          <a
+            href="https://github.com/saranrajidev-ai"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
             aria-label="GitHub"
           >
-            <Github size={18} />
-          </a> */}
+            <GitFork size={18} />
+          </a>
         </div>
 
         <div className="text-sm text-muted-foreground">
