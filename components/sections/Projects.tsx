@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 
 const PROJECTS = [
   {
@@ -17,7 +18,8 @@ const PROJECTS = [
     metrics: ["Serverless Architecture", "High Scalability", "Sub-second Retrieval"],
     stack: ["AWS Lambda", "Amazon S3", "Amazon Bedrock", "DynamoDB", "Next.js"],
     featured: true,
-    link: "/projects/ai-rag",
+    link: "https://coinledger.shop/",
+    image: "/coinledger.png",
   },
   {
     title: "VAPT Security Hardening",
@@ -71,6 +73,18 @@ export function Projects() {
                   <div className="text-5xl font-bold text-white/5 mb-4 font-outfit">0{index + 1}</div>
                 )}
                 <h3 className="text-2xl font-bold text-foreground mb-4 font-outfit">{project.title}</h3>
+                
+                {project.image && (
+                  <div className="mb-6 relative w-full h-48 md:h-64 rounded-xl overflow-hidden border border-white/10 group-hover:border-primary/30 transition-colors">
+                    <Image 
+                      src={project.image} 
+                      alt={project.title} 
+                      fill
+                      className="object-cover object-top hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
                 </p>
@@ -95,8 +109,8 @@ export function Projects() {
                 </div>
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
                   {project.link ? (
-                    <a href={project.link} className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
-                      View Case Study <ExternalLink size={14} />
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+                      View Live Application <ExternalLink size={14} />
                     </a>
                   ) : (
                     <span className="text-sm text-muted-foreground italic">Proprietary / Internal</span>

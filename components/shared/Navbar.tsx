@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { name: "Experience", href: "/#experience" },
   { name: "Skills", href: "/#skills" },
   { name: "Projects", href: "/#projects" },
-  { name: "AI RAG Project", href: "/projects/ai-rag" },
   { name: "Contact", href: "/#contact" },
 ];
 
