@@ -6,11 +6,12 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "About", href: "/#about" },
+  { name: "Experience", href: "/#experience" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Projects", href: "/#projects" },
+  { name: "AI RAG Project", href: "/projects/ai-rag" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export function Navbar() {

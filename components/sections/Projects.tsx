@@ -12,11 +12,12 @@ const PROJECTS = [
     featured: true,
   },
   {
-    title: "Enterprise Knowledge Retrieval Agent (RAG)",
-    description: "Built a full-stack RAG pipeline for document-based AI responses. Processes complex enterprise PDFs and allows natural language querying against internal knowledge bases.",
-    metrics: ["FastAPI Backend", "Vector Search", "LLM Integration"],
-    stack: ["Python", "FastAPI", "React.js", "LangChain", "Pinecone"],
-    featured: false,
+    title: "AWS Enterprise AI RAG Platform",
+    description: "Designed and implemented a scalable Retrieval-Augmented Generation (RAG) system using AWS serverless architecture. Enables secure, natural language querying against vast troves of enterprise documents.",
+    metrics: ["Serverless Architecture", "High Scalability", "Sub-second Retrieval"],
+    stack: ["AWS Lambda", "Amazon S3", "Amazon Bedrock", "DynamoDB", "Next.js"],
+    featured: true,
+    link: "/projects/ai-rag",
   },
   {
     title: "VAPT Security Hardening",
@@ -92,12 +93,14 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                {/* 
-                  Since these are proprietary internal projects, we don't have public GitHub or Live Demo links.
-                  But we can keep the UI placeholders if the user wants to add them later.
-                */}
                 <div className="flex items-center gap-4 pt-4 border-t border-white/10">
-                  <span className="text-sm text-muted-foreground italic">Proprietary / Internal</span>
+                  {project.link ? (
+                    <a href={project.link} className="text-sm font-medium text-primary hover:text-primary/80 transition-colors flex items-center gap-2">
+                      View Case Study <ExternalLink size={14} />
+                    </a>
+                  ) : (
+                    <span className="text-sm text-muted-foreground italic">Proprietary / Internal</span>
+                  )}
                 </div>
               </div>
             </motion.div>
