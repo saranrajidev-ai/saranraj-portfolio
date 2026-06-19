@@ -45,7 +45,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl leading-relaxed"
           >
-            3.4+ years building production-grade <strong className="text-foreground">digital lending platforms</strong>, scalable microservices, and AI-powered applications for India's NBFC ecosystem.
+            3.6+ years building production-grade <strong className="text-foreground">digital lending platforms</strong>, scalable microservices, and AI-powered applications for India's NBFC ecosystem.
           </motion.p>
 
           <motion.div
