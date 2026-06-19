@@ -9,7 +9,14 @@ const PROJECTS = [
     title: "Digital Lending Microservices Platform",
     description: "End-to-end loan origination platform serving 10+ NBFCs. Modular microservices handle KYC verification, CIBIL checks, e-NACH repayment setup, and collections workflows — all event-driven.",
     metrics: ["10+ NBFC Clients", "40% Throughput Gain", "5+ Microservices"],
-    stack: ["Node.js", "React.js", "RabbitMQ", "MongoDB", "Azure", "Docker"],
+    stack: ["Node.js", "React.js", "RabbitMQ", "MongoDB", "AWS", "Docker"],
+    featured: true,
+  },
+  {
+    title: "Loan Servicing Repayment Platform",
+    description: "Implemented a loan servicing platform supporting EMI scheduling, repayment tracking, payment reconciliation, delinquency monitoring, collections management, and automated customer communication through SMS and email notifications.",
+    metrics: ["NBFC Clients"],
+    stack: ["Node.js", "React.js", "RabbitMQ", "MongoDB", "AWS", "Docker"],
     featured: true,
   },
   {
@@ -26,13 +33,6 @@ const PROJECTS = [
     description: "Led the company's first security audit preparation. Implemented payload encryption, JWT token rotation, rate limiting, and IP whitelisting across 5+ production services.",
     metrics: ["VAPT Certified", "Zero Breaches", "5+ Services Secured"],
     stack: ["JWT", "Encryption", "Rate Limiting", "IP Whitelist"],
-    featured: false,
-  },
-  {
-    title: "Azure Cloud Infrastructure & Observability",
-    description: "Designed multi-environment Azure setup with VNets, Subnets, and Key Vault. Integrated Prometheus metrics collection and Grafana dashboards for real-time service health monitoring.",
-    metrics: ["99.9% Uptime", "Real-time Alerts", "Secure Networking"],
-    stack: ["Azure VNet", "Key Vault", "Prometheus", "Grafana", "Nginx"],
     featured: false,
   },
 ];
