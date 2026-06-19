@@ -73,7 +73,7 @@ export function Hero() {
             className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 pt-8 border-t border-white/10"
           >
             {[
-              { label: "Years Exp.", value: "3.4+" },
+              { label: "Years Exp.", value: "3.6+" },
               { label: "NBFC Clients", value: "10+" },
               { label: "Microservices", value: "8+" },
               { label: "Throughput ↑", value: "30%" },
